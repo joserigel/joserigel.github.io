@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: radial-gradient( rgb(67, 40, 146) 0%, rgb(29,20,68) 100%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: auto;
+}
+
+
+a {
+    all: unset;
+}
+
+.noselect {
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    padding: 2em;
+    height: 5em;
+    width: 40%;
+    display: block;
+    z-index: 100;
+}
+
+#header * {
+    margin: 0.3em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header h1 { 
+    font-size: 24px;
+    margin: 0.2em;
+    padding: 0.3em 0.8em;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+#header .nav-button:hover { 
+    color: lightgrey;
+    transform: translateY(-3%);
+    filter: drop-shadow(1px 3px rgb(54, 38, 75));
+    transition-duration: 0.2s;
+}
+
+#home { 
+    color: black; 
+    border-radius: 1.5em; 
+    background-color: rgb(253, 56, 164);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    filter: drop-shadow(5px 2px 3px rgb(24, 2, 53));
+}
+#home:hover {
+    color: white;
+    background-color:rgb(201, 20, 89);
+    transform: translateY(-3%);
+    transition-duration: 0.2s;
+}
+
+#main-article {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    translate: 60%;
+    position: fixed;
+    text-align: justify;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#main-article::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    display: none;
+}
+
+#main-article > div {
+    padding: 1em;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+
+
+.waves {
+    position: static;
+    height: 100vh;
+    float: right;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.icon-position {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    padding-left: 5vmax;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.name-title {
+    text-align: left;
+    font-size: 11vw;
+    filter: drop-shadow(3px 5px 3px rgba(100, 34, 100, 0.774));
+    z-index: 1;
+}
+
+.name-title br {
+    content: " ";
+    display: block;
+    height: 0px;
+    margin: -30px 0px;
+    line-height:22px;
+}
+
+.blob {
+    position: fixed;
+    left: -17%;
+    top: 5.5%;
+    transform: translateX(30em);
+    z-index: -100;
+    height: 85%;
+    width: 85%;
+    -webkit-mask: url("img/Blob.svg") no-repeat center;
+    mask: url("img/Blob.svg") no-repeat center;
+    animation: 3s infinite alternate wobble;
+}
+
+.offset {
+    left: -17%;
+    top: 6%;
+    height: 85.5%;
+    width: 85.5%;
+}
+
+
+.pink-red-gradient {
+    position: relative;
+    background: linear-gradient(15deg, #eb3e6f, #db56f0, #68a0ff);
+    height: 100%;
+    width: 100%;
+}
+
+.dark-shadow {
+    position: relative;
+    background: radial-gradient( rgb(41, 24, 87) 0%, rgb(34, 26, 71) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes wobble {
+    0%   {transform: translateY(0em) rotate(0deg);}
+    50%  {transform: translateY(-5%) rotate(3deg);}
+    100% {transform: translateY(0em) rotate(0deg);}
+}
+
+/* BEYOND THIS LINE ARE THE CSS FOR ALL IN THE MAIN SECTION*/
+article {
+    z-index: 100;
+}
+
+
+article h1 {
+    font-size: 72px;
+    margin: 0;
+    text-align: center;
+}
+
+article h2 {
+    margin: 0.5em 0 0 0;
+}
+
+article hr {
+    margin: 0;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.card {
+    border-radius: 25px;
+    padding: 17px 30px;
+    background: linear-gradient(45deg, rgba(25, 14, 83, 0.404) 0%, rgba(150, 28, 146, 0.322) 100%);
+    backdrop-filter: blur(10px);
+    color: white;
+    filter: drop-shadow(3px 5px 3px rgba(25, 14, 83, 0.404));
+    margin: 1em 0em;
+}
+
+.card>* {
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+}
+
+.card *:first-child {
+    margin-top: 0;
+}
+
+.card *:last-child {
+    margin-bottom: 0;
+}
+
+.card p {
+    margin: 1em 0px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.card hr {
+    border: 2px solid white;
+    margin: 0.3em 0.3em;
+}
+
+ul.horizontal-list {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0.3em 0.3em;
+    padding: 8px;
+    border-radius: 100vh;
+    background:linear-gradient(45deg, rgb(14, 148, 244) 0%, rgb(151, 28, 245) 100%);
+}
+
+.horizontal-list li:hover {
+    transform: translateY(-5%);
+    transition-duration: 0.3s;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.overlap {
+    position: relative;
+    margin: 1em 0px;
+    height: 25vw;
+}
+
+.overlap>*{
+    height: 25vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    position: absolute;
+    top:0; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.overlap>div {
+    aspect-ratio: 1280/769;
+    position: absolute;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlap a {
+    position: absolute;
+    text-decoration: none;
+    all: unset;
+}
+
+
+.overlap>* {
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+.overlap .overlay:hover {
+    opacity: 1;
+    background-color: #10264d5b;
+    transition-duration: 0.2s;
+}
+
+.overlap .card {
+    position: absolute;
+    backdrop-filter: none;
+    background:linear-gradient(45deg, rgb(14, 148, 244) 0%, rgb(151, 28, 245) 100%);
+    top: 45%;
+    font-size: 24px;
+    border-radius: 5em;
+}
+
+.overlap .card:active {
+    color: #f4bbff;
+}
+
+.overlap .card:hover {
+    background:linear-gradient(45deg, rgb(13, 111, 181) 0%, rgb(105, 18, 171) 100%);
+}
