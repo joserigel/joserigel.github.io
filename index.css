@@ -103,6 +103,144 @@ a {
     100% {transform: translateY(0em) rotate(0deg);}
 }
 
+
+/* elements */
+
+.card {
+    border-radius: 25px;
+    padding: 17px 30px;
+    background: linear-gradient(45deg, rgba(25, 14, 83, 0.404) 0%, rgba(150, 28, 146, 0.322) 100%);
+    backdrop-filter: blur(10px);
+    color: white;
+    filter: drop-shadow(3px 5px 3px rgba(25, 14, 83, 0.404));
+    margin: 1em 0em;
+}
+
+.card>* {
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+}
+
+.card *:first-child {
+    margin-top: 0;
+}
+
+.card *:last-child {
+    margin-bottom: 0;
+}
+
+.card p {
+    margin: 1em 0px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.card hr {
+    border: 2px solid white;
+    margin: 0.3em 0.3em;
+}
+
+ul.horizontal-list {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0.3em 0.3em;
+    padding: 8px;
+    border-radius: 100vh;
+    background:linear-gradient(45deg, rgb(14, 148, 244) 0%, rgb(151, 28, 245) 100%);
+}
+
+.horizontal-list li:hover {
+    transform: translateY(-5%);
+    transition-duration: 0.3s;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.overlap {
+    position: relative;
+    margin: 1em 0px;
+    height: 25vw;
+}
+
+.overlap>*{
+    height: 25vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    position: absolute;
+    top:0; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.overlap>div {
+    aspect-ratio: 1280/769;
+    position: absolute;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlap a {
+    position: absolute;
+    text-decoration: none;
+    all: unset;
+}
+
+
+.overlap>* {
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+.overlap .overlay:hover {
+    opacity: 1;
+    background-color: #10264d5b;
+    transition-duration: 0.2s;
+}
+
+.overlap .card {
+    position: absolute;
+    backdrop-filter: none;
+    background:linear-gradient(45deg, rgb(14, 148, 244) 0%, rgb(151, 28, 245) 100%);
+    top: 45%;
+    font-size: 24px;
+    border-radius: 5em;
+}
+
+.overlap .card:active {
+    color: #f4bbff;
+}
+
+.overlap .card:hover {
+    background:linear-gradient(45deg, rgb(13, 111, 181) 0%, rgb(105, 18, 171) 100%);
+    transform: translateY(-3%);
+}
+
 /* BEYOND THIS LINE ARE THE CSS FOR ALL IN THE MAIN SECTION*/
 article {
     z-index: 100;
