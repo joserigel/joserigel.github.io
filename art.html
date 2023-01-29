@@ -13,18 +13,19 @@
         </div>
 
         <div id="zoom">
-            
+            <img id="cross" src="img/cross.svg" onclick="reveal()">
+            <img id="main-picture" src="img/gwenstacy.png">
         </div>
 
         <img class="curves" src="img/Lines.svg">
         <div class="circle pink-red-gradient"></div>
 
         <article>
-            <div class="card bobble"><img style="transform: scale(110%)" src="img/gwenstacy.png"></div>
-            <div class="card bobble"><img style="transform: scale(150%) translateY(3%)" src="img/manportrait.jpg"></div>
-            <div class="card bobble"><img style="transform: scale(130%)" src="img/femaleportrait.jpg"></div>
-            <div class="card bobble"><img style="transform: scale(110%)" src="img/wonderwoman.jpg"></div>
-            <div class="card bobble"><img style="transform: scale(100%)" src="img/spiderman.png"></div>
+            <div class="card bobble"><img onclick="reveal(this)" style="transform: scale(110%)" src="img/gwenstacy.png"></div>
+            <div class="card bobble"><img onclick="reveal(this)" style="transform: scale(150%) translateY(3%)" src="img/manportrait.jpg"></div>
+            <div class="card bobble"><img onclick="reveal(this)" style="transform: scale(130%)" src="img/femaleportrait.jpg"></div>
+            <div class="card bobble"><img onclick="reveal(this)" style="transform: scale(110%)" src="img/wonderwoman.jpg"></div>
+            <div class="card bobble"><img onclick="reveal(this)" style="transform: scale(100%)" src="img/spiderman.png"></div>
             <div class="card blur">
                 <div class="contact-card">
                     <img class="icon" src="img/icons/instagram.svg">
@@ -34,5 +35,56 @@
                 </div>
             </div>
         </article>
+
+        <script>
+            const zoom = document.getElementById("zoom");
+            const picture = document.getElementById("main-picture");
+
+            document.addEventListener("keydown", function(event) {
+                if (event.keyCode == 27 && zoom.style.opacity == 1) {
+                    reveal();
+                }
+            });
+
+            function reveal(obj) {
+                if (obj instanceof HTMLImageElement) {
+                    picture.src = obj.src;
+                }
+
+
+                let start = Date.now();
+                let duration = 400;
+
+                let revealing = (zoom.style.opacity <= 0)? true : false;
+                if (revealing) {
+                    zoom.style.zIndex = 1000;
+                }
+
+                let timer = setInterval(function() {
+                    let timeRatio = (Date.now() - start) / duration;
+                    
+                    if (timeRatio >= 1) {
+                        clearInterval(timer);
+                        if (revealing) {
+                            zoom.style.opacity = 1;
+                        } else {
+                            zoom.style.opacity = 0;
+                            zoom.style.zIndex = -1000;
+                        }
+                        return;
+                    }
+                    draw(timeRatio);
+                }, 20)
+
+                function draw(timeRatio) {
+                    if (revealing) {
+                        zoom.style.opacity = timeRatio * timeRatio;
+                    } else {
+                        zoom.style.opacity = 1 - (timeRatio * timeRatio);
+                    }
+                }
+            }
+
+        </script>
     </body>
 </html>

@@ -6,7 +6,7 @@
 	.st0{fill:none;stroke:url(#SVGID_1_);stroke-width:250;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:url(#SVGID_2_);stroke-width:250;stroke-miterlimit:10;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="847.5734" y1="1615.7172" x2="4143.8164" y2="1615.7172">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="843.7977" y1="2268.4561" x2="5422.3696" y2="2268.4561">
 	<stop  offset="0" style="stop-color:#EE4489"/>
 	<stop  offset="0.1214" style="stop-color:#DB6D9B"/>
 	<stop  offset="0.2898" style="stop-color:#C28EB2"/>
@@ -16,9 +16,10 @@
 	<stop  offset="0.8919" style="stop-color:#6EC9E8"/>
 	<stop  offset="1" style="stop-color:#67CCEB"/>
 </linearGradient>
-<path class="st0" d="M969.5,3099.8c150-659.6,510-1066,711.5-1213.5c393-287.5,705.2-143.8,1042.3-488.5
-	c238.6-243.9,247.6-370.2,503.8-700c219.9-283,646.7-410,884.6-473.1"/>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1742.4308" y1="2312.2708" x2="4290.6152" y2="2312.2708">
+<path class="st0" d="M969.5,3099.8c15.5-709.5,645.9-1167.3,711.5-1213.5c450.9-317.3,688.6-126.8,1042.3-488.5
+	c238.6-243.9,247.6-370.2,503.8-700c71.6-92.2,495.9-494.6,884.6-473.1c667.9,36.9,1431.8,1362.9,1109.4,2472.7
+	c-292,1005.2-1342.5,1376-1544.4,1447.3C2727.4,4479.9,1435.9,4316,1078.3,3638C962.5,3418.5,967.5,3188.6,969.5,3099.8z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1721.0258" y1="2666.6467" x2="5133.5186" y2="2666.6467">
 	<stop  offset="0" style="stop-color:#EA70AB"/>
 	<stop  offset="2.467048e-02" style="stop-color:#E36FAA"/>
 	<stop  offset="0.2118" style="stop-color:#BA65A8"/>
@@ -28,6 +29,7 @@
 	<stop  offset="0.88" style="stop-color:#5E56A5"/>
 	<stop  offset="1" style="stop-color:#5956A5"/>
 </linearGradient>
-<path class="st1" d="M1854.1,3135.3c523.8-1040.3,979.8-1306.7,1327.1-1318.2c345.9-11.4,731.5,225.1,908.4,33.9
-	c91.7-99.1,83.9-266.1,61.2-396.5"/>
+<path class="st1" d="M1854.3,3135.3c-98.5-588.9,696.9-1291,1372.1-1318.2c401.1-16.1,801.4,204.3,939.1,33.9
+	c93.8-116.1-37.8-285.4,63.3-396.5c128.5-141.3,552.5-99.2,698.7,85.2c368.2,464.4-569.1,2406.5-1806.7,2423.1
+	C2576.7,3970.1,1933.1,3605.7,1854.3,3135.3z"/>
 </svg>
