@@ -32,7 +32,6 @@ a {
     position: fixed;
     padding: 2em;
     height: 5em;
-    width: 40%;
     display: block;
     z-index: 1000;
 }
