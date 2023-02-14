@@ -145,12 +145,21 @@
             function addClass(object, cls) {
                 if (!object.classList.contains(cls)) {
                     object.classList.add(cls);
+                } else {
+                    
                 }
             }
 
             function showError(text, success) {
                 error.style.display = 'flex';
-                error.classList.remove('moveout-animate');
+                if (error.classList.contains('moveout-animate')) {
+                    error.classList.remove('moveout-animate');
+                }
+                if (error.classList.contains('movein-animate')) {
+                    error.classList.remove('movein-animate');
+                }
+
+                void error.offsetHeight;
 
                 errorText.innerText = text;
                 addClass(error, 'movein-animate');

@@ -404,7 +404,7 @@ ul.contacts a:hover {
     color: white;
     font-family: inherit;
     box-sizing: border-box;
-    border: none;
+    border: 2px solid white;
     border-radius: 20px;
     width: 100%;
     font-size: 18px;
@@ -415,7 +415,7 @@ ul.contacts a:hover {
     margin: auto;
     color: white;
     resize: none;
-    border: none;
+    border: 2px solid white;
     box-sizing: border-box;
     font-family: inherit;
     font-size: 18px;
@@ -424,6 +424,10 @@ ul.contacts a:hover {
     height: 15em;
     border-radius: 20px;
     background: linear-gradient(to top, rgba(64, 48, 93, 0.75), rgb(56, 62, 66));
+}
+
+#contact-form textarea:focus, input:focus {
+    outline: none;
 }
 
 #contact-form h5 {
@@ -456,7 +460,7 @@ input:-webkit-autofill:active{
 }
 
 .movein-animate {
-    animation: 1s forwards ease-in move-in;
+    animation: 0.65s forwards ease-in move-in;
 }
 
 .moveout-animate {
