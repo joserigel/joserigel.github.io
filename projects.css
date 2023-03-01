@@ -3,4 +3,105 @@
     bottom: 0;
     width: 100%;
     transform: scaleY(50%) translateY(50%);
+    z-index: -1;
+}
+
+main {
+    position: static;
+    padding-top: 120px;
+    padding-bottom: 5px;
+    mask: linear-gradient(to bottom, transparent, white 15%);
+    -webkit-mask: linear-gradient(to bottom, transparent, white 15%);
+    z-index: 1;
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    display: none;
+}
+.card {
+    display: grid;
+    grid-template-columns: min-content;
+    border-radius: 25px;
+    padding: 17px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: linear-gradient(45deg, rgb(5, 1, 25, 0.8) 0%, rgb(70, 11, 68, 0.5) 100%);
+    filter: drop-shadow(5px 5px 5px rgba(47, 19, 70, 0.681));
+    color: white;
+}
+
+.card > h1 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card > div {
+    grid-column-start: 2;
+    margin: 15px;
+}
+
+.card h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 24px;
+}
+
+.card ul {
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.card > img {
+    border-radius: 20px;
+    width: 500px;
+    margin: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+    font-size: 24px;
+    width: 10em;
+    height: 2em;
+    border-radius: 5em;
+    background: linear-gradient(45deg, rgb(14, 148, 244) 0%, rgb(151, 28, 245) 100%);
+}
+
+.button:hover {
+    transform: translateY(-8%);
+    background:linear-gradient(45deg, rgb(13, 111, 181) 0%, rgb(105, 18, 171) 100%);
+    transition-duration: 0.2s;
+}
+
+.button:active {
+    color: #f4bbff;
 }
