@@ -113,73 +113,8 @@
                             <li><img src="img/icons/LinkedIn.png"><a target="_blank" href="https://www.linkedin.com/in/jose-rigel-26125b243/">joserigel</a></li>
                             <li><img src="img/icons/github-white.svg"><a target="_blank" href="https://github.com/joserigel">joserigel</a></li>
                         </ul>
-                        <div id="contact-form">
-                            <h4>Name</h4>
-                            <input id="name" type="text" required>
-                            <h5 id="name-warning">Field is required!</h5>
-                            <h4>E-Mail</h4>
-                            <input id="email" type="email" required>
-                            <h5 id="email-warning">Field is required!</h5>
-                            <h4>Message</h4>
-                            <textarea id="message"></textarea>
-                            <h5 id="message-warning">Field is required!</h5>
-                            <button id="send-button">Send</button>
-                        </div>
-                    </div>
-                    
                 </div>
         </article>
-
-        <div id="error" onclick="dismissError()">
-            <img id="back-arrow" src="img/back_arrow.svg">
-            <div id="error-card" class="noselect">
-                <p id="error-text">HI! I'm an error!</p>
-            </div>
-        </div>
-        <script>
-            const error = document.getElementById('error');
-            const errorCard = document.getElementById('error-card');
-            const errorText = document.getElementById('error-text');
-
-
-            function addClass(object, cls) {
-                if (!object.classList.contains(cls)) {
-                    object.classList.add(cls);
-                } else {
-                    
-                }
-            }
-
-            function showError(text, success) {
-                error.style.display = 'flex';
-                if (error.classList.contains('moveout-animate')) {
-                    error.classList.remove('moveout-animate');
-                }
-                if (error.classList.contains('movein-animate')) {
-                    error.classList.remove('movein-animate');
-                }
-
-                void error.offsetHeight;
-
-                errorText.innerText = text;
-                addClass(error, 'movein-animate');
-
-                if (success) {
-                    addClass(errorCard, 'success');
-                } else {
-                    addClass(errorCard, 'failed');
-                }
-            }
-
-            function dismissError() {
-                error.classList.remove('movein-animate');
-                error.classList.add('moveout-animate');
-
-                setTimeout(() => {
-                    error.style.display = 'none';
-                }, 550);
-            }
-        </script>
         
         <script src="sender.js"></script>
     </body>
