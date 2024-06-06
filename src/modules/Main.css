@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     background: radial-gradient( rgb(67, 40, 146) 0%, rgb(29,20,68) 100%);
     background-repeat: no-repeat;
@@ -15,11 +17,56 @@ main {
     position: absolute;
 }
 
-nav {
+header {
     position: fixed;
-    margin: 0.5em;
+    margin: 1.5em;
     display: inline-block;
     vertical-align: middle;
     z-index: 1000;
+}
+
+.nav-item {
     color: white;
+    -o-user-select: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0.2em;
+    padding: 0.3em 0.8em;
+    font-weight: bold;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+
+.nav-item:active {
+    color: rgb(128, 128, 128);
+}
+
+.nav-item:hover {
+    transform: translateY(-3%);
+    filter: drop-shadow(1px 3px rgb(54, 38, 75));
+    transition-duration: 0.2s;
+}
+
+.nav-item:first-child {
+    color: rgb(46, 38, 65); 
+    border-radius: 1.5em; 
+    background-color: rgb(253, 56, 164);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    filter: drop-shadow(5px 2px 3px rgb(24, 2, 53));
+}
+
+.nav-item:first-child:hover {
+    color: white;
+    background-color:rgb(183, 43, 174);
+    transform: translateY(-3%);
+    transition-duration: 0.2s;
+}
+
+.nav-item:first-child:active {
+    color: rgb(46, 38, 65);
 }
