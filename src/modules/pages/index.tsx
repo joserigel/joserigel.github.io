@@ -1,8 +1,8 @@
-import React from "react";
-import Home from "./Home";
-import Blog from "./Blog";
-import Art from "./Art";
-import Project from "./Project";
+import React from 'react';
+import Home from './Home';
+import Blog from './Blog';
+import Art from './Art';
+import Project from './Project';
 
 const pages = [
     {
@@ -10,15 +10,15 @@ const pages = [
         element: <Home/>
     },
     {
-        path: "/blog",
+        path: '/blog',
         element: <Blog/>
     },
     {
-        path: "/art",
+        path: '/art',
         element: <Art/>
     },
     {
-        path: "/project",
+        path: '/project',
         element: <Project/>
     }
 ]
