@@ -1,3 +1,28 @@
+article {
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    translate: 60%;
+    text-align: justify;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;    
+    -webkit-mask-image: linear-gradient(transparent, white 5em);
+    mask-image: linear-gradient(transparent, white 5em);
+}
+
+article::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    display: none;
+}
+
 .icon-position {
     height: 100%;
     position: absolute;
@@ -129,28 +154,3 @@
     50%         {transform: translateY(-5%) rotate(3deg);}
 }
 
-
-article {
-    box-sizing: border-box;
-    position: absolute;
-    padding-top: 150px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 60%;
-    translate: 60%;
-    text-align: justify;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    scroll-behavior: smooth;    
-    -webkit-mask-image: linear-gradient(transparent, white 5em);
-    mask-image: linear-gradient(transparent, white 5em);
-}
-
-article::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-    display: none;
-}

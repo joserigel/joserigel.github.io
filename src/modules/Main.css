@@ -18,6 +18,8 @@ main {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     margin: 1.5em;
     display: inline-block;
@@ -27,6 +29,7 @@ header {
 
 .nav-item {
     color: white;
+    box-sizing: border-box;
     -o-user-select: none;
     display: inline-block;
     font-size: 24px;
@@ -69,4 +72,51 @@ header {
 
 .nav-item:first-child:active {
     color: rgb(46, 38, 65);
+}
+
+.burger {
+    position: fixed;
+    z-index: 1001;
+    height: 50px;
+    margin: 1.5em;
+}
+
+@media (max-width: 667px) {
+    header {
+        position: absolute;
+        flex-direction: column;
+        background: linear-gradient(-45deg, rgba(12, 4, 71, 0.5), rgb(59, 13, 132));
+        filter: drop-shadow(15px 0px 30px rgba(31, 2, 53, 0.557));
+        padding-top: 150px;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+    }
+
+    .nav-item, .nav-item:first-child {
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0.5em;
+        position: relative;
+        width: 100%;
+        border-radius: 0;
+        padding-left: 0.5em;
+        background-color: transparent;
+        background-color: rgba(39, 7, 64, 0.441);
+        color: white;
+        filter: none;
+    }
+
+    .nav-item:hover, .nav-item:first-child:hover {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgba(39, 7, 64, 0.441);
+        transform: none;
+        filter: none;
+    }
+
+    .nav-item:active, .nav-item:first-child:active {
+        color: rgb(157, 150, 188);
+    }
 }
