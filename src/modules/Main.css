@@ -118,6 +118,22 @@ header {
     }
 }
 
+.fade-to-header {
+    -webkit-mask-image: linear-gradient(transparent, white 5em);
+    mask-image: linear-gradient(transparent, white 5em);
+}
+
+.invisible-scroll {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;    
+}
+
 @media (max-width: 967px) {
     header {
         transform: translateX(-300px);

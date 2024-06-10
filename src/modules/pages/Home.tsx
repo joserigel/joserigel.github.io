@@ -18,7 +18,7 @@ function Home() {
     
     <img className='waves' src='/waves.svg' alt='waves'/>
 
-    <article>
+    <article className='fade-to-header invisible-scroll'>
       <h1 className='name-title-alt'>Hello!</h1>
       <div className='card'>
         <p>

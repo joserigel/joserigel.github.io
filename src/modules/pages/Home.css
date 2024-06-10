@@ -9,12 +9,6 @@ article {
     width: 60%;
     translate: 60%;
     text-align: justify;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    scroll-behavior: smooth;    
-    -webkit-mask-image: linear-gradient(transparent, white 5em);
-    mask-image: linear-gradient(transparent, white 5em);
 }
 
 article::-webkit-scrollbar {

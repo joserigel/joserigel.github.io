@@ -1,0 +1,102 @@
+.lines {
+    position: fixed;
+    left: 15%;
+    height: 100vh;
+    width: 100vw;
+    filter: drop-shadow(5px 5px 5px rgba(5, 0, 3, 0.623));
+}
+
+.circle {
+    position: fixed;
+    height: 50vw;
+    width: 50vw;
+    top: 15%;
+    left: -15%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px rgba(5, 0, 3, 0.623));
+}
+
+.pink-red-gradient {
+    background: linear-gradient(15deg, #eb3e6f, #db56f0, #68a0ff);
+}
+
+.grid {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding-top: 100px;    
+    text-align: justify;
+    justify-content: center;
+}
+
+.grid > img {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin: 1em;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px black);
+    overflow: hidden;
+
+    align-self: center;
+    object-position: center;
+    object-fit: cover;
+}
+
+.bobble {
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.bobble:hover {
+    transform: translateY(-3%);
+}
+
+.bobble:active {
+    filter: brightness(80%);
+}
+
+.zoom {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px) brightness(60%);
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.62));
+    opacity: 0;
+    transition-duration: 1.0s;
+}
+
+.zoom > .main-img {
+    position: absolute;
+    max-height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zoom > .cross {
+    position: fixed;
+    height: 2em;
+    margin: 2em;
+    top: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.zoom > .cross:hover {
+    transform: translateY(-10%);
+}
+
+.zoom > .cross:active {
+    filter: brightness(80%);
+}
+
+.zoom-show {
+    opacity: 1;
+    z-index: 2000;
+}
