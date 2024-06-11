@@ -36,15 +36,15 @@ function Home() {
         <ul>
           <li>
             <img className='icon' src="/icons/gmail.png" alt='gmail'/>
-            <a className='contact-button' target="_blank" href="mailto:joserigel18@gmail.com">joserigel18@gmail.com</a>
+            <a className='contact-button' rel="noopener noreferrer" target="_blank" href="mailto:joserigel18@gmail.com">joserigel18@gmail.com</a>
           </li>
           <li>
             <img className='icon' src="/icons/LinkedIn.png" alt='LinkedIn'/>
-            <a className='contact-button' target="_blank" href="https://www.linkedin.com/in/jose-rigel-26125b243/">joserigel</a>
+            <a className='contact-button' rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/joserigel/">joserigel</a>
           </li>
           <li>
             <img className='icon' src="/icons/github-white.svg" alt='GitHub'/>
-            <a className='contact-button' target="_blank" href="https://github.com/joserigel">joserigel</a>
+            <a className='contact-button' rel="noopener noreferrer" target="_blank" href="https://github.com/joserigel">joserigel</a>
           </li>
         </ul>
       </div>

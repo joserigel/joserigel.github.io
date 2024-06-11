@@ -4,11 +4,12 @@ import './Art.css';
 function Art() {
   const [show, setShow] = useState('');
   const sources = [
+    ['spiderman-preview.png', 'spiderman.png'],
     ['femaleportrait-preview.jpg', 'femaleportrait.jpg'],
     ['gwenstacy-preview.png', 'gwenstacy.png'],
     ['manportrait-preview.jpg', 'manportrait.jpg'],
-    ['spiderman-preview.png', 'spiderman.png'],
-    ['wonderwoman-preview.jpg', 'wonderwoman.jpg']
+    ['wonderwoman-preview.jpg', 'wonderwoman.jpg'],
+    ['cyberpunk-preview.png', 'cyberpunk.png']
   ];
 
   return (<>
