@@ -74,7 +74,8 @@
 
 .zoom > .main-img {
     position: absolute;
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 100px);
+    max-width: calc(100vw - 10em);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
