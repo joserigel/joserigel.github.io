@@ -29,11 +29,13 @@ function Main() {
         setTimeout(() => setIsMobile(true), 400);
       }
     }
+    window.document.title = 'Jose Rigel';
+
     window.addEventListener('resize', onWindowResize);
     onWindowResize({target: {innerWidth: window.innerWidth}});
 
     return () => window.removeEventListener('resize', onWindowResize)
-  });
+  }, []);
 
   return (<>
     <Burger expanded={expanded} setExpanded={setExpanded}/>
