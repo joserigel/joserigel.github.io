@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 133 22"
+   width="133"
+   height="22"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="aptiv.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.3386717"
+     inkscape:cx="-0.57621322"
+     inkscape:cy="33.766095"
+     inkscape:window-width="2560"
+     inkscape:window-height="1339"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Group-4" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="_clipPath_dPYqGdop8JVcCt6WV3IchxP4qPrSdW1m">
+      <rect
+         width="171"
+         height="22"
+         id="rect2"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#_clipPath_dPYqGdop8JVcCt6WV3IchxP4qPrSdW1m)"
+     id="g16"
+     transform="translate(-19)">
+    <g
+       id="Header-Dark">
+      <g
+         id="Dark">
+        <g
+           id="Group-4">
+          <g
+             id="Group-6">
+            <g
+               id="aptiv-logo">
+              <path
+                 d="m 130.808,0 h 5.908 l 4.096,16.577 h 1.335 L 146.213,0 H 152 l -6.038,22 h -9.086 z m -18.771,22 h 5.643 V 0 h -5.643 z M 98.856,5.053 H 92.363 V 22 H 86.719 V 5.053 H 80.257 V 0 H 98.856 Z M 60.961,9.706 c 2.215,0 3.064,-0.801 3.064,-2.372 0,-1.572 -0.849,-2.342 -3.064,-2.342 H 56.956 V 9.706 Z M 61.69,0 c 5.127,0 8.1,2.65 8.1,7.241 0,4.653 -2.973,7.364 -8.1,7.364 H 56.956 V 22 H 51.313 V 0 Z M 27.252,11.801 h 4.825 L 30.347,5.424 H 29.013 Z M 40.511,22 H 34.898 L 33.321,16.3 H 26.038 L 24.492,22 H 19 L 25.493,0 h 8.525 z"
+                 fill-rule="evenodd"
+                 fill="#000000"
+                 id="path9" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

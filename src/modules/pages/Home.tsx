@@ -22,17 +22,32 @@ function Home() {
       <h1 className='name-title-alt'>Hello!</h1>
       <div className='card'>
         <p>
-          Hi, my name is Jose Rigel, a Computer Science Student @ RWTH Aachen University. At the moment, I am on track to finish my studies in 2025 as I'm in my 4<sup>th</sup> Semester.
+          Hi, my name is Jose Rigel, a Computer Science Student @ RWTH Aachen University. At the moment, I am on track to finish my studies in 2026 as I'm in my 4<sup>th</sup> Semester.
         </p>
         <p>
-          I'm currently looking for new challenges in Software Engineering, specifically in Working Student positions or Full Time Internships. During my second and third semester of my study, I worked in the automotive industry as a part time Full-Stack Software Developer.
+          My interest in software engineering includes <em>Computer Graphics, Computer Vision and Web Development</em>. Currently, I am interning at <em>Tesla</em> as a <em>Software Engineer</em>, developing software for internal use in <em>Giga Factory Berlin Brandenburg</em>. Previously, I worked in the <em>R&D Department</em> of <em>Aptiv</em>, developing internal tools used to annotate computer vision data.
         </p>
         <p>
-          Now I'm currently studying to expand my knowledge in many parts of Computer Science!
+          I'm always open to a conversation and new challenges! Let's connect!
         </p>
       </div>
 
+      <div className='card employment'>
+        <h1>My Experiences</h1>
+        <div>
+          <img src="/icons/tesla.svg"/>
+          <h3>Software Engineer Intern</h3>
+          <h4>October 2024 - March 2025</h4>
+        </div>
+        <div>
+          <img src="icons/aptiv.svg"/>
+          <h3>Full-stack Working Student Developer</h3>
+          <h4>May 2023 - April 2025</h4>
+        </div>
+      </div>
+
       <div className='card'>
+        <h1>Contacts</h1>
         <ul>
           <li>
             <img className='icon' src="/icons/gmail.png" alt='gmail'/>
