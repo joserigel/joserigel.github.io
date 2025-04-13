@@ -22,10 +22,17 @@ function Home() {
       <h1 className='name-title-alt'>Hello!</h1>
       <div className='card'>
         <p>
-          Hi, my name is Jose Rigel, a Computer Science Student @ RWTH Aachen University. At the moment, I am on track to finish my studies in 2026 as I'm in my 4<sup>th</sup> Semester.
+          Hi, my name is Jose Rigel, a Computer Science Student @ RWTH Aachen University. 
+          At the moment, I am on track to finish my studies in 2026 as I'm in my 5<sup>th</sup> Semester.
         </p>
         <p>
-          My interest in software engineering includes <em>Computer Graphics, Computer Vision and Web Development</em>. Currently, I am interning at <em>Tesla</em> as a <em>Software Engineer</em>, developing software for internal use in <em>Giga Factory Berlin Brandenburg</em>. Previously, I worked in the <em>R&D Department</em> of <em>Aptiv</em>, developing internal tools used to annotate computer vision data.
+          My interest in software engineering includes <em>Computer Graphics, 
+            Computer Vision and Web Development</em>. 
+            Currently, I am interning at <em>Tesla</em> as a <em>Software Engineer</em>, 
+            developing software for internal use in <em>
+            Giga Factory Berlin Brandenburg</em>. 
+            Previously, I worked in the <em>R&D Department</em> of <em>Aptiv</em>,
+            developing internal tools used to annotate computer vision data.
         </p>
         <p>
           I'm always open to a conversation and new challenges! Let's connect!
@@ -36,6 +43,10 @@ function Home() {
         <h1>My Experiences</h1>
         <div>
           <img src="/icons/tesla.svg"/>
+          <h3>Software Engineer Working Student</h3>
+          <h4>April 2025 - Present</h4>
+        </div>
+        <div>
           <h3>Software Engineer Intern</h3>
           <h4>October 2024 - March 2025</h4>
         </div>
