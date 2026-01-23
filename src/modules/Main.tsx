@@ -42,10 +42,9 @@ function Main() {
     <header className={`${expanded ? 'expanded' : ''}`}
       style={{transitionDuration: isMobile ? '0.2s' : '0s'}}
     >
-        <Link className='nav-item' to='/'>Home</Link>
-        {/* <Link className='nav-item' to='project'>Projects</Link>
-        <Link className='nav-item' to='blog'>Blog</Link> */}
-        <Link className='nav-item' to='art'>Art</Link>
+      <Link className='nav-item' to='/'>Home</Link>
+      <Link className='nav-item' to='projects'>Projects</Link>
+      <Link className='nav-item' to='art'>Art</Link>
     </header>
     
     <main>

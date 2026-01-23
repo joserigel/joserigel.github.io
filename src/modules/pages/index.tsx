@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from './Home';
-import Blog from './Blog';
 import Art from './Art';
-import Project from './Project';
+import Projects from './Projects';
 
 const pages = [
     {
@@ -10,16 +9,12 @@ const pages = [
         element: <Home/>
     },
     {
-        path: '/blog',
-        element: <Blog/>
-    },
-    {
         path: '/art',
         element: <Art/>
     },
     {
-        path: '/project',
-        element: <Project/>
+        path: '/projects',
+        element: <Projects/>
     }
 ]
 

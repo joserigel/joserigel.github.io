@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     background: radial-gradient( rgb(67, 40, 146) 0%, rgb(29,20,68) 100%);
     background-repeat: no-repeat;
